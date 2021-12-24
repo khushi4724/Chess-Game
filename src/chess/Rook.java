@@ -20,7 +20,7 @@ public class Rook implements Piece {
 
     public void updateCastle() {
         if (eligibleCastle) {
-            eligibleCastle = ((xCoord == 0) && (xCoord == 0)) ||
+            eligibleCastle = ((xCoord == 0) && (yCoord == 0)) ||
                     ((xCoord == 0) && (yCoord == 7)) ||
                     ((xCoord == 7) && (yCoord == 0)) ||
                     ((xCoord == 7) && (yCoord == 7));

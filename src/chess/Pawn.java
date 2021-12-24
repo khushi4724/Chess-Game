@@ -75,7 +75,7 @@ public class Pawn implements Piece {
         Collection<Move> moves = new TreeSet<>();
         if (x == 1) {
             if (isWhite) {
-                // pawn can move two places at start of game
+                // pawn can move one place or two places at the start of game
                 moves.add(new Move(x + 1, y));
                 moves.add(new Move(x + 2, y));
             } else {
@@ -93,7 +93,6 @@ public class Pawn implements Piece {
                 int newX = x + 1;
                 if (newX <= 6) {
                     moves.add(new Move(newX, y));
-                    // have to handle promotion if new position is
                 }
             } else {
                 int newX = x - 1;

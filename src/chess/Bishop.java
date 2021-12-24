@@ -43,7 +43,7 @@ public class Bishop implements Piece {
 
     public Collection<Move> getMoves(int x, int y) {
         Collection<Move> moves = new TreeSet<>();
-        for (int i = -7; i < 8; i++) {
+        for (int i = -7; i <= 7; i++) {
             int newX = x + i;
             int newY = y + i;
             int newX2 = x - i;

@@ -36,7 +36,8 @@ public class Queen implements Piece {
     public boolean isWhite() {
         return isWhite;
     }
-
+    
+    // checks whether the queen doesn't go outside of the chess board
     public boolean checkOutOfBounds(int x, int y) {
         return ((x > -1 && x < 8) && (y > -1 && y < 8));
     }

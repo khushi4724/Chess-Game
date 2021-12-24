@@ -85,6 +85,7 @@ public class Pawn implements Piece {
             if (isWhite) {
                 moves.add(new Move(x + 1, y));
             } else {
+                // black pawn is moving towards the first rank so we have to subtract from x
                 moves.add(new Move(x - 1, y));
                 moves.add(new Move(x - 2, y));
             }
